@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- Boostrap Style Sheet for Resume Modal -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -93,7 +96,7 @@
 					<!-- Resume -->
 					<article id="resume" class="panel secondary">
 						<div class="image">
-							<img src="images/NickSolimineResume.png" alt="Nick Solimine Resume" data-position="center center" />
+							<img src="images/headshot.png" alt="Nick Solimine Resume" data-position="center center" />
 						</div>
 						<div class="content">
 							<ul class="actions spinX">
@@ -102,10 +105,25 @@
 							<div class="inner">
 								<header>
 									<h2>Resume</h2>
-									<p>Please click below to download<br />
-										a copy of my resume</p>
+									<p>Please click below to see my resume<br />
+										in the browser or download a copy</p>
 								</header>
-								<button><a href="images/NickSolimineResume.png" download="NickSolimineResume.png">Download</a></button>
+								<button type="button" data-toggle="modal" data-target="#exampleModal">
+								  View Resume in Broswer
+								</button>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg" role="document">
+								    <div class="modal-content">
+								      <div class="modal-body">
+								       	<img src="images/NickSolimineResume.png" alt="Nick Solimine Resume" style="max-height: 100%; width: 100%;" />
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" data-dismiss="modal">Close</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<button><a href="images/NickSolimineResume.png" download="NickSolimineResume.png">Download Resume</a></button>
 							</div>
 						</div>
 					</article>
@@ -377,6 +395,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<!-- Scripts for Bootstrap -->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	</body>
 </html>
