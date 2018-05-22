@@ -1537,3 +1537,7 @@
 	    overflow-x: auto;
 	    width: auto;
 		}
+
+		.downloadResumeButton {
+			margin-top: 22px;
+		}
