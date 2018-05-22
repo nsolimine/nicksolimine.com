@@ -1541,3 +1541,7 @@
 		.downloadResumeButton {
 			margin-top: 22px;
 		}
+
+		.modalMouseDown:hover {
+			text-decoration: underline;
+		}
