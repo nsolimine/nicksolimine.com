@@ -1546,3 +1546,7 @@
 		.modalMouseDown:hover {
 			text-decoration: underline;
 		}
+
+		.projectUrlButton {
+			margin-top: 22px;
+		}
